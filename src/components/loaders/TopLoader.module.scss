@@ -1,0 +1,27 @@
+.topLoader {
+  //   width: 0;
+  height: 0.5rem;
+  background-color: #c69963;
+  position: absolute;
+  border-radius: 500rem;
+  top: 0;
+  left: 0;
+  //   transition: ease 5000ms;
+  z-index: 1000;
+
+  animation: inner 5s linear infinite;
+}
+@keyframes inner {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 20vw;
+  }
+  50% {
+    width: 50vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}

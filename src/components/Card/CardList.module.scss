@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  transition: all 2s;
+  // left: -84rem;
+  position: relative;
+}
+.show {
+  width: 25rem !important;
+  opacity: 1 !important;
+  margin-right: 3rem !important;
+  z-index: 1 !important;
+}
+.firstChild {
+  width: 0 !important;
+  margin-right: -25rem !important;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 0;
+    // width: 100%;
+    display: unset;
+  }
+  70% {
+    display: unset;
+    // width: 100%;
+    opacity: 0;
+  }
+  100% {
+    display: unset;
+    // width: 100%;
+    opacity: 1;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  // overflow: hidden;
+}

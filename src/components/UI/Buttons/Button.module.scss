@@ -1,0 +1,36 @@
+@import "../../../styles/base";
+
+.btn {
+  font-size: 2rem;
+  background-color: transparent;
+  font-family: $font-display;
+  color: $light-1;
+  border: 0.1rem solid $light-2;
+  &-flat {
+    border-radius: 500rem;
+    // margin-top: 20px;
+    width: 22rem;
+    height: 5rem;
+  }
+  &-rounded {
+    border-radius: 500rem;
+    min-width: 10rem;
+    min-height: 10rem;
+    &-sm {
+      border-radius: 500rem;
+      width: 5rem;
+      height: 5rem;
+      padding-top: 1rem;
+      background-color: #f0b71c;
+      margin-right: 2rem;
+      border: none;
+    }
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.178);
+  }
+
+  &:active {
+    background: rgba(255, 255, 255, 0.466);
+  }
+}

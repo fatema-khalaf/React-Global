@@ -1,0 +1,52 @@
+.card {
+  height: 40rem;
+  // width: 25rem;
+  min-width: 25rem;
+  // max-width: 25rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-right: 3rem;
+  box-shadow: 1.5rem 1.7rem 1.4rem 0 rgb(0 0 0 / 39%);
+  position: relative;
+  z-index: 1;
+
+  transition: 2s;
+  // animation: move 0.5s;
+  // animation-delay: calc(0.1s * var(--i));
+  // cubic-bezier(0.62, 1.45, 0.95, 0.45);
+  // transition-delay: 2s;
+
+  h1,
+  h4,
+  span {
+    padding-left: 2rem;
+  }
+  h1 {
+    padding-bottom: 3rem;
+  }
+  img {
+    // filter: saturate(0.5);
+    filter: brightness(0.8);
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    border-radius: 1.5rem;
+  }
+}
+.dis {
+  display: none;
+}
+@keyframes move {
+  0% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    transform: translateX(-3rem);
+  }
+}

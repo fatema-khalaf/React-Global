@@ -1,0 +1,26 @@
+// COLOR VARIABLES
+$primary: #c69963;
+$secondary: #f0b71c;
+
+$light-1: #f9f7f6;
+$light-2: #fff;
+// $color-secondary: #101d2c;
+
+// $color-grey-dark-1: #54483a;
+// $color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: "League Gothic", sans-serif;
+$font-display: "League Spartan", sans-serif;
+// Responsive breakpoints
+$bp-largest: 75em; //1200px/16px
+$bp-large: 62.5em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
+
+.container {
+  font-family: $font-primary;
+  color: $light-1;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}

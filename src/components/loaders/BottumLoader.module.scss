@@ -1,0 +1,28 @@
+.bottumLoader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  margin-top: 5rem;
+  align-items: center;
+  //   justify-content: space-between;
+  & > * {
+    margin-right: 3rem;
+  }
+  button {
+    padding-top: 1rem;
+    font-size: 5rem;
+    font-weight: 300;
+  }
+}
+.fill {
+  height: 0.4rem;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.288);
+  overflow: hidden;
+  &-inner {
+    width: calc(100% / var(--j) * var(--i));
+    height: 0.4rem;
+    background-color: #c69963;
+  }
+}

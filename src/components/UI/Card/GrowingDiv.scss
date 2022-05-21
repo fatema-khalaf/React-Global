@@ -1,0 +1,132 @@
+.fsm {
+  // margin: 10vh 5vw;
+  // background-color: blue;
+  height: 100%;
+  width: 100%; // flex: 1;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+  // color: #f5f5f5;
+  // font-size: 1.5rem;
+  border-radius: 10px;
+  transition: 2s;
+  position: relative;
+  cursor: pointer;
+
+  // .fa {
+  //   transition: 1s;
+  //   color: #f5f5f5;
+  //   font-size: 2.5vw;
+
+  //   &:before {
+  //     color: #f5f5f5;
+  //   }
+  // }
+
+  .modal-content {
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
+
+  // h1.modal-content {
+  //   opacity: 0;
+  //   transition: 1s;
+  // }
+
+  &.apple {
+    // background: linear-gradient(135deg, #83458e 0%, #608dc9 100%);
+    img {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      bottom: 0;
+      border-radius: 1.5rem;
+      // filter: saturate(0.5);
+      filter: brightness(0.8);
+
+      // object-fit: cover;
+      // width: 100%;
+      // height: 100%;
+    }
+  }
+  // &.pied {
+  //   background: linear-gradient(135deg, #6ecdc7 0%, #c7e4ec 100%);
+  // }
+  // &.codepen {
+  //   background: linear-gradient(135deg, #778899 0%, #dcdcdc 100%);
+  // }
+  // &.google {
+  //   background: linear-gradient(135deg, #4285f4 0%, #ea4335 100%);
+  // }
+
+  &.growing {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    margin: 0;
+    // h1.modal-content {
+    //   height: auto;
+    //   margin: 0;
+    //   opacity: 0;
+    //   transition-delay: 0.5s;
+    // }
+  }
+
+  &.full-screen {
+    height: 100vh;
+    // z-index: 100;
+    margin: 0;
+    img {
+      border-radius: 0;
+    }
+
+    // .fa {
+    //   font-size: 10vw;
+    // }
+    .modal-content {
+      height: auto;
+      width: auto;
+      margin: inital;
+    }
+    // h1.modal-content {
+    //   transition-delay: 0.5s;
+    //   opacity: 1;
+    // }
+  }
+  &.shrinking {
+    // h1.modal-content {
+    //   transition-delay: 0s;
+    //   transition: 0.5s;
+    //   opacity: 0;
+    //   display: block;
+    // }
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
+.growing {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  margin: 0;
+  // h1.modal-content {
+  //   height: auto;
+  //   margin: 0;
+  //   opacity: 0;
+  //   transition-delay: 0.5s;
+  // }
+}
